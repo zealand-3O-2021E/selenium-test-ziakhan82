@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Selenium webapp test</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- TODO: Import Vue.js core library -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div class="nav-bar"></div>
+    <h1>Selenium Test</h1>
+
+    <!-- TODO: Add information display -->
+    <div id="app">
+        <h2>{{ introName }}</h2>
+
+
+        <button id="testButton1" class="button" @click="pressed">Click Me</button>
+
+        <input type="text" id="input1">
+
+        <div v-show="buttonpressed.completed">
+            <h2 class="row">
+                You pressed the Button :-) !
+            </h2>
+            <div class="row">
+                <button id="testButton2" class="button" @click="changecolour">Change colour</button>
+            </div>
+        </div>
+     </div>
+
+    <!-- TODO: Import Vue app -->
+    <script src="./index.js"></script>
+    <script>
+        app.mount('#app');
+    </script>
+</body>
+
+</html>
